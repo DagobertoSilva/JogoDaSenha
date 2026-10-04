@@ -23,6 +23,7 @@ int main() {
     // Armazena o número digitado pelo jogador.
     int tentativa;
 
+    int totalTentativas =0;
 
     /*
      * Essas duas variáveis armazenam a quantidade de números
@@ -197,7 +198,7 @@ while (
      */
 
     do {
-
+        totalTentativas++;
         /*
          * Zera os contadores antes de analisar
          * uma nova tentativa.
@@ -468,6 +469,8 @@ while (
         printf("Posicoes corretas: %d\n",
                caracteresNasPosicoesCorretas);
 
+        printf("QUANTIDADE DE TENTATIVAS: %d\n",   totalTentativas);
+
         printf("------------------------------------\n");
 
 
@@ -505,7 +508,7 @@ while (
     // Mostra a senha.
     printf("SENHA: %d\n", senha);
 
-
+    printf("QUANTIDADE DE TENTATIVAS: %d\n",   totalTentativas);
     /*
      * ============================================================
      * 17. FINALIZAÇÃO DO PROGRAMA
