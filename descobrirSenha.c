@@ -133,20 +133,14 @@ int main() {
      */
 
 
-while (senha == 000 || 
-       senha == 111 || 
-       senha == 222 || 
-       senha == 333 || 
-       senha == 444 || 
-       senha == 555 || 
-       senha == 666 || 
-       senha == 777 || 
-       senha == 888 || 
-       senha == 999) {
 
+while (
+    senha / 100 == (senha / 10) % 10 ||
+    senha / 100 == senha % 10 ||
+    (senha / 10) % 10 == senha % 10
+) {
     senha = minimo + rand() % (maximo - minimo + 1);
 }
-
 
     /*
      * ============================================================
